@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align self</title>
+    <style>
+        .flex-container{
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+            margin: 5px;
+
+        }
+        .align-container{
+            align-items: center;
+        }
+        .item{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center;
+            align-items: center;
+        }
+        .star{
+            align-self: flex-start;
+        }
+        .center{
+            align-self: center;
+        }
+        .end{
+            align-self: end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <section class="flex-container align-container">
+        <div class="item auto"></div>
+        <div class="item auto"></div>
+        <div class="item auto"></div>
+        <div class="item auto"></div>
+    </section>
+
+    <section class="flex-container ">
+        <div class="item center">AAA</div>
+        <div class="item star">123</div>
+        <div class="item stretch">Lorem ipsum is tehrefore alwad</div>
+        <div class="item end">ITEM</div>
+    </section>
+
+    <section class="flex-container ">
+        <div class="item center">AAA</div>
+        <div class="item star">AAAaaaaaaa</div>
+        <div class="item end">AAAaaaaaaaaaa</div>
+        <div class="item stretch">AAAaaaaaaaaaaaaaaaaaaaaaaaaaaa</div>
+
+    </section>
+</body>
+</html>
